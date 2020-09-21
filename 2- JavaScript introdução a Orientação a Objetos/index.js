@@ -13,8 +13,8 @@ const cliente2 = new Cliente();
 
 
 
- cliente2.nome = "Alice";
- cliente2.cpf= 11122233309;
+  cliente2.nome = "Alice";
+  cliente2.cpf= 11122233309;
 
 const contaCorrenteRicardo = new ContaCorrente();
 
@@ -24,12 +24,11 @@ contaCorrenteRicardo.depositar(500);
 
 
 const conta2 = new ContaCorrente();
-conta2.cliente = cliente2;
-conta2.conta_agencia = 102;
-
+conta2.cliente = new Cliente();
+conta2.cliente.nome = "Alice"
+conta2.cliente.cpf = 11122233309;
+// conta2.conta_agencia = 102;
 
 
 contaCorrenteRicardo.transferir(200, conta2);
-
 console.log(conta2);
-console.log(contaCorrenteRicardo);
